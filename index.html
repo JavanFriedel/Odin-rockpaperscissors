@@ -3,10 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <title>Rock Paper scissors</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link href="./style.css" rel="stylesheet">
     </head>
 
     <body>
-        <h1>Some default text</h1>
+        <h1 class="header p-2">Rock Paper Scissors!</h1>
+
+        <div class="container-sm d-flex justify-content-evenly mb-5">
+            <div id='rock' class="playerOption m-3">
+                <img class="selectImg" src="./images/rock.svg" alt="Rock">
+                <div><p>Rock</p><p class="text-secondary">Press 1 or R key</p></div>
+            </div>
+            <div id="paper" class="playerOption m-3">
+                <img class="selectImg"  id='paper-icon' src="./images/paper.svg" alt="Paper">
+                <div><p>Paper</p><p class="text-secondary">Press 2 or P key</p></div>
+            </div>
+            <div id="scissors" class="playerOption m-3" >                
+                <img class="selectImg"  src="./images/scissors.svg" alt="Scissors">
+                <div><p>Scissors</p><p class="text-secondary">Press 3 or S key</p></div>            
+            </div>
+        </div>
+
+        <div class="container-sm scoreBoard mt-5">
+            <div class="score mb-5">
+                <span id="player-score" class="score-text" >0</span><span id='scoreDivider' class="score-text"> - </span><span class="score-text" id="comp-score">0</span>
+            </div>
+            <div class="log">
+                <h3 id="logTitle" class="p-2 logEntry">Log</h3>
+            </div>
+        </div>
 
     <script type="text/javascript" src="./script.js"></script>
     </body>

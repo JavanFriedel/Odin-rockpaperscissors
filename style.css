@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(38, 0, 255);
+    text-align: center;
+
+    background-image: url("./images/bg.jpg");
+    background-size: 700px;
+
+    color: white;
+}
+
+h3 {
+    margin: 0
+}
+
+.header {
+    background-color: rgba(19, 19, 19, 0.8);
+}
+
+#paper-icon {
+    transform: rotate(270deg);
+}
+
+.playerOption {
+    min-width: 250px;
+    min-height: 250px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    background-color: rgba(19, 19, 19, 0.8);
+}
+
+.playerOption:hover {
+    background-color: rgba(0, 60, 170, 0.815);
+    cursor: pointer;
+}
+
+.selectImg {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.score {
+    width: 250px;
+    margin: auto;
+    background-color: rgba(19, 19, 19, 0.8);
+    border-radius: 10px;
+    border: 4px solid white;
+    box-sizing: content-box;
+}
+
+.score-text {
+    font-size: 6em;
+    
+}
+
+.log {
+    background-color: rgba(19, 19, 19, 0.8);
+    margin: auto;
+    max-width: 500px;
+}
+
+
+.logEntry {
+    padding: 10px;
+}
+.logEntry:nth-child(even) {
+    background-color: rgba(63, 63, 63, 0.473);
+}
+
+.logEntry:nth-child(1) {
+    border-bottom: 2px solid white;
+}
+
+.win {
+    border: 4px solid green;
+}
+
+.loss {
+    border: 4px solid red;
+}
+
+.declareWinner {
+    font-size: 25px;
+}
